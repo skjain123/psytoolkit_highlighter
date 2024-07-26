@@ -1,0 +1,28 @@
+{
+  "name": "psytoolkit-syntax-highlighting",
+  "displayName": "PsyToolkit Syntax Highlighting",
+  "description": "Syntax highlighting for PsyToolkit scripts",
+  "version": "0.0.1",
+  "publisher": "suniljain0504",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": ["Programming Languages"],
+  "contributes": {
+    "languages": [
+      {
+        "id": "psytoolkit",
+        "aliases": ["PsyToolkit", "psytoolkit"],
+        "extensions": [".psytoolkit"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "psytoolkit",
+        "scopeName": "source.psytoolkit",
+        "path": "./syntaxes/psytoolkit.tmLanguage.json"
+      }
+    ]
+  }
+}

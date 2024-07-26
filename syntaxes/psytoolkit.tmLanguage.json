@@ -1,0 +1,38 @@
+{
+	"scopeName": "source.psytoolkit",
+	"patterns": [
+	  {
+		"match": "\\b(task|block)\\s+(\\w+)\\b",
+		"name": "support.function.psytoolkit"
+	  },
+	  {
+		"match": "\\b(select|prefix|postfix|mean|perc)\\b",
+		"name": "keyword.operator.psytoolkit"
+	  },
+	  {
+		"match": "\\b(\\d+)\\b",
+		"name": "constant.numeric.psytoolkit"
+	  },
+	  {
+		"match": "\".*?\"",
+		"name": "string.quoted.double.psytoolkit"
+	  },
+	  {
+		"match": "#.*$",
+		"name": "comment.line.psytoolkit"
+	  },
+	  {
+		"match": "\\&\\w+",
+		"name": "variable.other.psytoolkit"
+	  },
+	  {
+		"match": "(==|!=|<=|>=|<|>)",
+		"name": "keyword.operator.comparison.psytoolkit"
+	  }
+	],
+	"repository": {},
+	"name": "PsyToolkit",
+	"fileTypes": ["psy"],
+	"uuid": "3c3b1493-1c5b-4d49-8f87-d49d5b5b6483"
+  }
+  
