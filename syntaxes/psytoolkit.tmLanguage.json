@@ -2,15 +2,23 @@
 	"scopeName": "source.psytoolkit",
 	"patterns": [
 	  {
-		"match": "\\b(task|block)\\s+(\\w+)\\b",
+		"match": "\\b(options|bitmaps|task|part|show|set|if|else|while|while-end|clear|delay|end|choose|readkeys|append|shuffle|expression)\\b",
+		"name": "keyword.control.psytoolkit"
+	  },
+	  {
+		"match": "\\b(origin|center|fullscreen|resolution|scale|startbutton|size|space|show|select|minselect|maxselect|validParticipant|triangle|positions)\\b",
 		"name": "support.function.psytoolkit"
 	  },
 	  {
-		"match": "\\b(select|prefix|postfix|mean|perc)\\b",
-		"name": "keyword.operator.psytoolkit"
+		"match": "\\b(and|or|not|times|append|shuffle|clear|length|expression)\\b",
+		"name": "keyword.operator.logical.psytoolkit"
 	  },
 	  {
-		"match": "\\b(\\d+)\\b",
+		"match": "\\b(==|!=|<=|>=|<|>|&&|\\|\\|)\\b",
+		"name": "keyword.operator.comparison.psytoolkit"
+	  },
+	  {
+		"match": "\\b(-?\\d+(\\.\\d+)?)\\b",
 		"name": "constant.numeric.psytoolkit"
 	  },
 	  {
@@ -18,16 +26,24 @@
 		"name": "string.quoted.double.psytoolkit"
 	  },
 	  {
-		"match": "#.*$",
-		"name": "comment.line.psytoolkit"
+		"match": "\\&(\\w+)",
+		"name": "variable.global.psytoolkit"
 	  },
 	  {
-		"match": "\\&\\w+",
+		"match": "\\%(\\w+)",
+		"name": "variable.local.psytoolkit"
+	  },
+	  {
+		"match": "\\$\\w+",
 		"name": "variable.other.psytoolkit"
 	  },
 	  {
-		"match": "(==|!=|<=|>=|<|>)",
-		"name": "keyword.operator.comparison.psytoolkit"
+		"match": "\\#.*$",
+		"name": "comment.line.psytoolkit"
+	  },
+	  {
+		"match": "\\b([A-Z][a-zA-Z0-9]*)\\b",
+		"name": "entity.name.function.psytoolkit"
 	  }
 	],
 	"repository": {},
