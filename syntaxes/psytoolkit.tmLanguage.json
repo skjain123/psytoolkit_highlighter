@@ -6,7 +6,7 @@
 		"name": "keyword.control.psytoolkit"
 	  },
 	  {
-		"match": "\\b(origin|center|fullscreen|resolution|scale|startbutton|size|space|show|select|minselect|maxselect|validParticipant|triangle|positions)\\b",
+		"match": "\\b(origin|center|fullscreen|resolution|scale|size|space|show|select|minselect|maxselect)\\b",
 		"name": "support.function.psytoolkit"
 	  },
 	  {

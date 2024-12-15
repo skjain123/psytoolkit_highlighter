@@ -2,7 +2,7 @@
   "name": "psytoolkit-syntax-highlighting",
   "displayName": "PsyToolkit Syntax Highlighting",
   "description": "Syntax highlighting for PsyToolkit scripts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "suniljain0504",
   "engines": {
     "vscode": "^1.60.0"
